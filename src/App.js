@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { HashRouter as Router, Route, Switch } from 'react-router-dom'
 import { Header } from './components/Header'
 import { Footer } from './components/Footer'
 import { Home } from './pages/Home'
@@ -10,7 +10,7 @@ import './App.css'
 const App = () => {
   return (
     <>
-      <Router basename='/react-food'>
+      <Router>
         <Header />
         <main className='container content'>
           <Switch>
